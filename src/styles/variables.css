@@ -1,0 +1,98 @@
+:root {
+  /* ================================
+     GEELAK BRAND COLORS
+  ================================= */
+
+  --color-navy: #0f2d52;
+  --color-copper: #b87333;
+  --color-gold: #d4af37;
+  --color-ivory: #faf8f3;
+  --color-charcoal: #1f2937;
+  --color-sand: #e7d7c1;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ================================
+     TEXT COLORS
+  ================================= */
+
+  --text-primary: #1f2937;
+  --text-secondary: #5f6670;
+  --text-light: #faf8f3;
+  --text-muted: #7a7f87;
+
+  /* ================================
+     BACKGROUND COLORS
+  ================================= */
+
+  --bg-primary: #faf8f3;
+  --bg-secondary: #e7d7c1;
+  --bg-dark: #0f2d52;
+
+  /* ================================
+     CONTAINER
+  ================================= */
+
+  --container-width: 1200px;
+  --container-padding: 24px;
+
+  /* ================================
+     BORDER RADIUS
+  ================================= */
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+
+  /* ================================
+     SHADOWS
+  ================================= */
+
+  --shadow-sm: 0 4px 12px rgba(15, 45, 82, 0.08);
+  --shadow-md: 0 10px 30px rgba(15, 45, 82, 0.12);
+  --shadow-lg: 0 20px 50px rgba(15, 45, 82, 0.16);
+
+  /* ================================
+     TRANSITIONS
+  ================================= */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ================================
+     Z-INDEX
+  ================================= */
+
+  --z-navbar: 1000;
+  --z-overlay: 1100;
+  --z-modal: 1200;
+  --z-whatsapp: 1300;
+
+  /* ================================
+     TYPOGRAPHY
+  ================================= */
+
+  --font-primary: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 2rem;
+  --font-4xl: 2.5rem;
+  --font-5xl: 3.5rem;
+  --font-6xl: 4.5rem;
+
+  /* ================================
+     SECTION SPACING
+  ================================= */
+
+  --section-padding: 90px;
+  --section-padding-mobile: 60px;
+}

@@ -1,0 +1,316 @@
+/* =================================
+   GOOGLE FONTS
+================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+
+/* =================================
+   RESET
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+/* =================================
+   LINKS
+================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =================================
+   IMAGES
+================================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =================================
+   BUTTON RESET
+================================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.container {
+  width: min(100% - 48px, var(--container-width));
+  margin-inline: auto;
+}
+
+
+/* =================================
+   SECTION
+================================= */
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+
+/* =================================
+   SECTION TITLE
+================================= */
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  font-size: var(--font-sm);
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: var(--color-copper);
+}
+
+
+.section-title {
+  font-family: var(--font-heading);
+
+  font-size: var(--font-4xl);
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  color: var(--color-navy);
+}
+
+
+.section-description {
+  max-width: 700px;
+
+  margin-top: 18px;
+
+  font-size: var(--font-lg);
+
+  color: var(--text-secondary);
+}
+
+
+/* =================================
+   TEXT HIGHLIGHT
+================================= */
+
+.text-copper {
+  color: var(--color-copper);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+
+/* =================================
+   BUTTON BASE
+================================= */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 13px 26px;
+
+  border: 2px solid transparent;
+
+  border-radius: var(--radius-sm);
+
+  font-size: var(--font-md);
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: var(--transition-normal);
+}
+
+
+.btn-primary {
+  background-color: var(--color-copper);
+  color: var(--color-white);
+}
+
+
+.btn-primary:hover {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+
+  transform: translateY(-2px);
+}
+
+
+.btn-outline {
+  background-color: transparent;
+
+  border-color: var(--color-gold);
+
+  color: var(--color-gold);
+}
+
+
+.btn-outline:hover {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+
+/* =================================
+   DARK SECTION
+================================= */
+
+.section-dark {
+  background-color: var(--color-navy);
+
+  color: var(--color-ivory);
+}
+
+
+.section-dark .section-title {
+  color: var(--color-ivory);
+}
+
+
+/* =================================
+   LIGHT SECTION
+================================= */
+
+.section-light {
+  background-color: var(--color-ivory);
+}
+
+
+/* =================================
+   SAND SECTION
+================================= */
+
+.section-sand {
+  background-color: var(--color-sand);
+}
+
+
+/* =================================
+   OVERLAY
+================================= */
+
+.overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(15, 45, 82, 0.65);
+}
+
+
+/* =================================
+   VISIBILITY
+================================= */
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+
+/* =================================
+   SELECTION
+================================= */
+
+::selection {
+  background-color: var(--color-copper);
+  color: var(--color-white);
+}
+
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy);
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-copper);
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: min(100% - 32px, var(--container-width));
+  }
+
+  .section {
+    padding: var(--section-padding-mobile) 0;
+  }
+
+  .section-title {
+    font-size: var(--font-3xl);
+  }
+
+  .section-description {
+    font-size: var(--font-md);
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+}
