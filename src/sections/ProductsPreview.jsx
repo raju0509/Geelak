@@ -3,10 +3,10 @@ import { ArrowUpRight } from "lucide-react";
 const products = [
   {
     number: "01",
-    name: "Coffee Powder",
-    category: "Coffee & Beverages",
+    name: "Coffee",
+    category: "Coffee",
     description:
-      "Quality coffee products prepared for customers and markets across borders.",
+      "Quality coffee products sourced from India for customers and international markets.",
     image: "/images/products/coffee.jpg",
   },
   {
@@ -14,15 +14,15 @@ const products = [
     name: "Agriculture Products",
     category: "Agricultural Produce",
     description:
-      "Selected agricultural products connecting Indian sourcing with global opportunities.",
+      "Selected agricultural products sourced from India and prepared for international markets.",
     image: "/images/products/agriculture.jpg",
   },
   {
     number: "03",
-    name: "Leather Products",
-    category: "Leather & Lifestyle",
+    name: "Leather",
+    category: "Leather",
     description:
-      "Quality leather products prepared with a focus on international markets.",
+      "Quality leather products sourced for customers seeking reliable products from India.",
     image: "/images/products/leather.jpg",
   },
 ];
@@ -34,6 +34,7 @@ function ProductsPreview() {
 
         {/* Section Header */}
         <div className="products-header">
+
           <div>
             <span className="section-eyebrow">
               OUR PRODUCTS
@@ -49,15 +50,22 @@ function ProductsPreview() {
             Explore the product categories GEELAK is preparing
             to take from Indian markets to customers around the world.
           </p>
+
         </div>
 
 
         {/* Product Cards */}
         <div className="products-grid">
-          {products.map((product) => (
-            <article className="product-card" key={product.name}>
 
+          {products.map((product) => (
+            <article
+              className="product-card"
+              key={product.number}
+            >
+
+              {/* Product Image */}
               <div className="product-image">
+
                 <img
                   src={product.image}
                   alt={product.name}
@@ -74,19 +82,29 @@ function ProductsPreview() {
                 >
                   <ArrowUpRight size={21} />
                 </a>
+
               </div>
 
+
+              {/* Product Content */}
               <div className="product-card-content">
 
                 <span className="product-category">
                   {product.category}
                 </span>
 
-                <h3>{product.name}</h3>
+                <h3>
+                  {product.name}
+                </h3>
 
-                <p>{product.description}</p>
+                <p>
+                  {product.description}
+                </p>
 
-                <a href="/products" className="product-link">
+                <a
+                  href="/products"
+                  className="product-link"
+                >
                   Explore Product
                   <ArrowUpRight size={16} />
                 </a>
@@ -95,6 +113,7 @@ function ProductsPreview() {
 
             </article>
           ))}
+
         </div>
 
       </div>

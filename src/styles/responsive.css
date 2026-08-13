@@ -43,3 +43,33 @@
   }
 
 }
+
+@media (max-width: 900px) {
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-preview-content {
+    max-width: 100%;
+  }
+
+  .about-image-frame {
+    height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-preview-grid {
+    gap: 35px;
+  }
+
+  .about-image-frame {
+    height: 320px;
+  }
+
+  .about-image-badge {
+    left: 15px;
+    bottom: 15px;
+  }
+}

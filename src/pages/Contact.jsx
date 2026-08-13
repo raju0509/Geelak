@@ -1,239 +1,357 @@
+import { useState } from "react";
 import {
   Mail,
   MapPin,
   Phone,
 } from "lucide-react";
 
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import InquiryCTA from "../sections/InquiryCTA";
+
 function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    setSubmitted(true);
+
+    // Reset the success message after 5 seconds
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 5000);
+  };
+
   return (
-    <main className="contact-page">
+    <>
+      <Navbar />
 
-      {/* Contact Hero */}
-      <section className="contact-hero section">
-        <div className="container">
+      <main className="contact-page">
 
-          <span className="section-eyebrow">
-            CONTACT GEELAK
-          </span>
+        {/* =================================
+            CONTACT HERO
+        ================================= */}
 
-          <h1>
-            Let's Start a
-            <span>Conversation.</span>
-          </h1>
+        <section className="contact-hero section">
+          <div className="container">
 
-          <p>
-            Have a product requirement or business inquiry?
-            Tell us what you are looking for and our team will
-            get in touch with you.
-          </p>
+            <span className="section-eyebrow">
+              CONTACT GEELAK
+            </span>
 
-        </div>
-      </section>
+            <h1>
+              Let's Start a
+              <span>Conversation.</span>
+            </h1>
 
+            <p>
+              Have a product requirement or business inquiry?
+              Tell us what you are looking for and our team will
+              get in touch with you.
+            </p>
 
-      {/* Contact Section */}
-      <section className="contact-section section">
-        <div className="container">
-
-          <div className="contact-grid">
-
-            {/* Contact Information */}
-            <div className="contact-info">
-
-              <span className="section-eyebrow">
-                GET IN TOUCH
-              </span>
-
-              <h2>
-                Let's Talk
-                <span>Business.</span>
-              </h2>
-
-              <p>
-                We welcome product inquiries, sourcing requirements
-                and business opportunities from customers and
-                partners.
-              </p>
+          </div>
+        </section>
 
 
-              <div className="contact-details">
+        {/* =================================
+            CONTACT + INQUIRY FORM
+        ================================= */}
 
-                <div className="contact-detail">
-                  <div className="contact-detail-icon">
-                    <MapPin size={20} />
+        <section className="contact-section section">
+          <div className="container">
+
+            <div className="contact-grid">
+
+              {/* =================================
+                  CONTACT INFORMATION
+              ================================= */}
+
+              <div className="contact-info">
+
+                <span className="section-eyebrow">
+                  GET IN TOUCH
+                </span>
+
+                <h2>
+                  Let's Talk
+                  <span>Business.</span>
+                </h2>
+
+                <p>
+                  We welcome product inquiries, sourcing
+                  requirements and business opportunities from
+                  customers and partners.
+                </p>
+
+
+                <div className="contact-details">
+
+                  {/* Location */}
+
+                  <div className="contact-detail">
+
+                    <div className="contact-detail-icon">
+                      <MapPin size={20} />
+                    </div>
+
+                    <div>
+                      <small>Location</small>
+                      <strong>India</strong>
+                    </div>
+
                   </div>
 
-                  <div>
-                    <small>Location</small>
-                    <strong>India</strong>
+
+                  {/* Phone */}
+
+                  <div className="contact-detail">
+
+                    <div className="contact-detail-icon">
+                      <Phone size={20} />
+                    </div>
+
+                    <div>
+                      <small>Phone</small>
+                      <strong>
+                        +91 XXXXX XXXXX
+                      </strong>
+                    </div>
+
                   </div>
+
+
+                  {/* Email */}
+
+                  <div className="contact-detail">
+
+                    <div className="contact-detail-icon">
+                      <Mail size={20} />
+                    </div>
+
+                    <div>
+                      <small>Email</small>
+                      <strong>
+                        info@geelak.com
+                      </strong>
+                    </div>
+
+                  </div>
+
                 </div>
 
+              </div>
 
-                <div className="contact-detail">
-                  <div className="contact-detail-icon">
-                    <Phone size={20} />
+
+              {/* =================================
+                  INQUIRY FORM
+              ================================= */}
+
+              <div className="inquiry-form-wrapper">
+
+                <form
+                  className="inquiry-form"
+                  onSubmit={handleSubmit}
+                >
+
+                  {/* Name + Email */}
+
+                  <div className="form-row">
+
+                    <div className="form-group">
+
+                      <label htmlFor="name">
+                        Name
+                      </label>
+
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Your name"
+                        required
+                      />
+
+                    </div>
+
+
+                    <div className="form-group">
+
+                      <label htmlFor="email">
+                        Email
+                      </label>
+
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Your email"
+                        required
+                      />
+
+                    </div>
+
                   </div>
 
-                  <div>
-                    <small>Phone</small>
-                    <strong>+91 XXXXX XXXXX</strong>
-                  </div>
-                </div>
+
+                  {/* Phone + Product */}
+
+                  <div className="form-row">
+
+                    <div className="form-group">
+
+                      <label htmlFor="phone">
+                        Phone
+                      </label>
+
+                      <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        placeholder="Your phone number"
+                        required
+                      />
+
+                    </div>
 
 
-                <div className="contact-detail">
-                  <div className="contact-detail-icon">
-                    <Mail size={20} />
+                    <div className="form-group">
+
+                      <label htmlFor="product">
+                        Product Interest
+                      </label>
+
+                      <select
+                        id="product"
+                        name="product"
+                        defaultValue=""
+                        required
+                      >
+
+                        <option value="" disabled>
+                          Select a product
+                        </option>
+
+                        <option value="coffee">
+                          Coffee Powder
+                        </option>
+
+                        <option value="agriculture">
+                          Agriculture Products
+                        </option>
+
+                        <option value="leather">
+                          Leather Products
+                        </option>
+
+                      </select>
+
+                    </div>
+
                   </div>
 
-                  <div>
-                    <small>Email</small>
-                    <strong>info@geelak.com</strong>
+
+                  {/* Message */}
+
+                  <div className="form-group">
+
+                    <label htmlFor="message">
+                      Message
+                    </label>
+
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="6"
+                      placeholder="Tell us about your requirement..."
+                      required
+                    />
+
                   </div>
-                </div>
+
+
+                  {/* Submit Button */}
+
+                  <button
+                    type="submit"
+                    className="inquiry-submit"
+                  >
+                    Send Inquiry
+                  </button>
+
+
+                  {/* Success Message */}
+
+                  {submitted && (
+                    <div className="form-success">
+                      Thank you for your inquiry.
+                      <br />
+                      Our team will get back to you soon.
+                    </div>
+                  )}
+
+                </form>
 
               </div>
 
             </div>
 
-
-            {/* Inquiry Form */}
-            <div className="inquiry-form-wrapper">
-
-              <form className="inquiry-form">
-
-                <div className="form-row">
-
-                  <div className="form-group">
-                    <label htmlFor="name">
-                      Name
-                    </label>
-
-                    <input
-                      id="name"
-                      type="text"
-                      placeholder="Your name"
-                    />
-                  </div>
+          </div>
+        </section>
 
 
-                  <div className="form-group">
-                    <label htmlFor="email">
-                      Email
-                    </label>
+        {/* =================================
+            LOCATION / GOOGLE MAP
+        ================================= */}
 
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="Your email"
-                    />
-                  </div>
+        <section className="contact-map">
 
-                </div>
+          <div className="container">
 
+            <div className="contact-map-header">
 
-                <div className="form-row">
+              <span className="section-eyebrow">
+                FIND US
+              </span>
 
-                  <div className="form-group">
-                    <label htmlFor="phone">
-                      Phone
-                    </label>
+              <h2>
+                Our <span>Location.</span>
+              </h2>
 
-                    <input
-                      id="phone"
-                      type="tel"
-                      placeholder="Your phone number"
-                    />
-                  </div>
+            </div>
 
 
-                  <div className="form-group">
-                    <label htmlFor="product">
-                      Product Interest
-                    </label>
+            <div className="map-placeholder">
 
-                    <select id="product">
-                      <option value="">
-                        Select a product
-                      </option>
-
-                      <option value="coffee">
-                        Coffee Powder
-                      </option>
-
-                      <option value="agriculture">
-                        Agriculture Products
-                      </option>
-
-                      <option value="leather">
-                        Leather Products
-                      </option>
-                    </select>
-                  </div>
-
-                </div>
-
-
-                <div className="form-group">
-
-                  <label htmlFor="message">
-                    Message
-                  </label>
-
-                  <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Tell us about your requirement..."
-                  />
-
-                </div>
-
-
-                <button
-                  type="submit"
-                  className="inquiry-submit"
-                >
-                  Send Inquiry
-                </button>
-
-              </form>
+              <p>
+                Google Maps will be embedded here once the
+                client's business location is confirmed.
+              </p>
 
             </div>
 
           </div>
 
-        </div>
-      </section>
+        </section>
 
 
-      {/* Google Map */}
-      <section className="contact-map">
+        {/* =================================
+            INQUIRY CTA
+        ================================= */}
 
-        <div className="container">
+        <InquiryCTA />
 
-          <div className="contact-map-header">
-            <span className="section-eyebrow">
-              FIND US
-            </span>
+      </main>
 
-            <h2>
-              Our <span>Location.</span>
-            </h2>
-          </div>
 
-          <div className="map-placeholder">
-            <p>
-              Google Maps will be embedded here once the
-              client's business location is confirmed.
-            </p>
-          </div>
+      {/* =================================
+          FOOTER
+      ================================= */}
 
-        </div>
+      <Footer />
 
-      </section>
-
-    </main>
+    </>
   );
 }
 

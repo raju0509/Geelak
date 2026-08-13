@@ -11,6 +11,7 @@ import "./styles/contact.css";
 import "./styles/responsive.css";
 import "./styles/footer.css";
 import "./styles/products-page.css";
+import "./styles/about-page.css";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

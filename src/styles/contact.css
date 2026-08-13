@@ -483,3 +483,27 @@
   }
 
 }
+
+/* =================================
+   FORM SUCCESS MESSAGE
+================================= */
+
+.form-success {
+  margin-top: 18px;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(34, 139, 34, 0.25);
+
+  border-radius: 6px;
+
+  background: rgba(34, 139, 34, 0.08);
+
+  color: #1f6b35;
+
+  font-size: 0.85rem;
+
+  line-height: 1.6;
+
+  text-align: center;
+}

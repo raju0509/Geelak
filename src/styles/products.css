@@ -3,7 +3,8 @@
 ================================= */
 
 .products-preview {
-  background: var(--color-white);
+  background: var(--color-ivory);
+
 }
 
 .products-header {
@@ -282,4 +283,8 @@
     margin-bottom: 35px;
   }
 
+}
+.products-preview .section-heading span {
+  display: block;
+  color: var(--color-copper);
 }

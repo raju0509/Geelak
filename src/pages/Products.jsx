@@ -7,8 +7,8 @@ function Products() {
   const products = [
     {
       number: "01",
-      category: "Coffee & Beverages",
-      title: "Coffee Powder",
+      category: "Coffee",
+      title: "Coffee",
       description:
         "Quality coffee products prepared for customers and markets across borders.",
       image: "/images/products/coffee.jpg",
@@ -25,8 +25,8 @@ function Products() {
 
     {
       number: "03",
-      category: "Leather & Lifestyle",
-      title: "Leather Products",
+      category: "Leather",
+      title: "Leather",
       description:
         "Quality leather products prepared with a focus on international markets.",
       image: "/images/products/leather.jpg",

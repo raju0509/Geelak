@@ -619,35 +619,55 @@
 ================================= */
 
 .about-preview {
-  background: var(--color-white);
+  background: var(--color-navy);
+  color: var(--color-white);
 }
 
 .about-preview-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   align-items: center;
-  gap: 70px;
 }
+
+/* =================================
+   CONTENT
+================================= */
 
 .about-preview-content {
   max-width: 620px;
 }
 
-.about-preview-text {
-  margin-top: 22px;
-
-  color: var(--color-text-muted);
-
-  font-size: 0.95rem;
-  line-height: 1.8;
+.about-preview .section-eyebrow {
+  color: var(--color-gold);
 }
+
+.about-preview .section-heading {
+  color: var(--color-white);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.about-preview .section-heading span {
+  display: block;
+  color: var(--color-copper);
+}
+
+.about-preview-text {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* =================================
+   POINTS
+================================= */
 
 .about-points {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-
-  margin-top: 28px;
+  gap: 16px;
+  margin: 30px 0;
 }
 
 .about-point {
@@ -655,21 +675,41 @@
   align-items: center;
   gap: 12px;
 
-  color: var(--color-navy);
+  color: var(--color-white);
 
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
 .about-point svg {
   flex-shrink: 0;
-
   color: var(--color-gold);
 }
 
+/* =================================
+   LINK
+================================= */
+
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--color-gold);
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: var(--transition-normal);
+}
+
+.about-link:hover {
+  color: var(--color-white);
+  gap: 12px;
+}
 
 /* =================================
-   ABOUT IMAGE
+   IMAGE
 ================================= */
 
 .about-preview-image {
@@ -680,7 +720,7 @@
   position: relative;
 
   width: 100%;
-  height: 480px;
+  height: 500px;
 
   overflow: hidden;
 
@@ -692,65 +732,51 @@
 }
 
 .about-image-frame img {
-  display: block;
-
   width: 100%;
   height: 100%;
 
+  display: block;
+
   object-fit: cover;
-
-  transition: transform 0.7s ease;
 }
-
-.about-image-frame:hover img {
-  transform: scale(1.03);
-}
-
 
 /* =================================
-   ABOUT IMAGE BADGE
+   IMAGE BADGE
 ================================= */
 
 .about-image-badge {
   position: absolute;
 
-  right: 0;
-  bottom: 0;
+  left: 25px;
+  bottom: 25px;
 
   display: flex;
   flex-direction: column;
 
-  min-width: 180px;
-
-  padding: 22px 26px;
+  padding: 18px 22px;
 
   background: var(--color-navy);
 
-  border-top-left-radius: 14px;
-
   border-left: 3px solid var(--color-gold);
 
-  z-index: 2;
+  color: var(--color-white);
 }
 
 .about-image-badge span {
   color: var(--color-gold);
 
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
-
   letter-spacing: 1px;
 }
 
 .about-image-badge small {
-  margin-top: 5px;
+  margin-top: 4px;
 
-  color: rgba(250, 248, 243, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 
-  font-size: 0.72rem;
+  font-size: 0.75rem;
 }
-
-
 /* =================================
    ABOUT RESPONSIVE
 ================================= */
