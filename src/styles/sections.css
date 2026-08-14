@@ -515,11 +515,11 @@
 
   align-items: center;
 
-  gap: 18px;
+  gap: 16px;
 
-  min-height: 125px;
+  min-height: 95px;
 
-  padding: 25px 30px;
+  padding: 18px 30px;
 }
 
 .trust-item:first-child {
@@ -535,8 +535,8 @@
 }
 
 .trust-icon {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
 
   flex-shrink: 0;
 
@@ -621,12 +621,15 @@
 .about-preview {
   background: var(--color-navy);
   color: var(--color-white);
+
+  padding-top: 75px;
+  padding-bottom: 45px;
 }
 
 .about-preview-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 55px;
   align-items: center;
 }
 
@@ -666,8 +669,8 @@
 .about-points {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin: 30px 0;
+  gap: 13px;
+  margin: 24px 0;
 }
 
 .about-point {
@@ -720,7 +723,7 @@
   position: relative;
 
   width: 100%;
-  height: 500px;
+  height: 430px;
 
   overflow: hidden;
 
@@ -819,9 +822,16 @@
    WHY CHOOSE GEELAK
 ================================= */
 
-.why-choose {
+/* =================================
+   WHY CHOOSE GEELAK
+================================= */
+
+.why-choose.section {
   background: var(--color-navy);
   color: var(--color-white);
+
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .why-choose-grid {
@@ -829,7 +839,7 @@
 
   grid-template-columns: 0.8fr 1.2fr;
 
-  gap: 90px;
+  gap: 60px;
 
   align-items: start;
 }
@@ -956,7 +966,7 @@
 
     gap: 12px;
 
-    min-height: 115px;
+    min-height: 105px;
   }
 
   .why-choose-icon {
@@ -977,7 +987,7 @@
    GLOBAL REACH
 ================================= */
 
-.global-reach {
+.global-reach.section {
   position: relative;
 
   overflow: hidden;
@@ -985,6 +995,9 @@
   background: var(--color-navy);
 
   color: var(--color-white);
+
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .global-reach-glow {
@@ -1018,7 +1031,7 @@
 
   align-items: center;
 
-  gap: 80px;
+  gap: 50px;
 }
 
 
@@ -1093,7 +1106,7 @@
 .global-reach-visual {
   position: relative;
 
-  min-height: 520px;
+  min-height: 330px;
 
   display: flex;
 
@@ -1108,8 +1121,8 @@
 .global-globe {
   position: relative;
 
-  width: 370px;
-  height: 370px;
+  width: 330px;
+  height: 330px;
 
   display: flex;
 

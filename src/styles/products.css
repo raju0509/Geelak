@@ -3,8 +3,26 @@
 ================================= */
 
 .products-preview {
-  background: var(--color-ivory);
+  background: var(--color-navy);
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
 
+
+.products-preview .section-eyebrow {
+  color: var(--color-gold);
+}
+
+.products-preview .section-heading {
+  color: var(--color-white);
+}
+
+.products-preview .section-heading span {
+  color: var(--color-gold);
+}
+
+.products-preview .products-intro {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .products-header {
@@ -12,7 +30,7 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 50px;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .products-header .section-heading {
