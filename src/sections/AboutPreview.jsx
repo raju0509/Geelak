@@ -14,8 +14,9 @@ function AboutPreview() {
 
           {/* Content */}
           <div className="about-preview-content">
+
             <span className="section-eyebrow">
-              ABOUT GEELAK
+              OUR STORY
             </span>
 
             <h2 className="section-heading">
@@ -24,16 +25,14 @@ function AboutPreview() {
             </h2>
 
             <p className="about-preview-text">
-              GEELAK Exports Private Limited is focused on connecting
-              quality Indian products with opportunities in international
-              markets.
+              We connect <strong>quality Indian products</strong>{" "}
+              with opportunities in international markets.
             </p>
 
             <p className="about-preview-text">
-              Our approach is built around quality, reliable trade and
-              professional relationships with customers and business
-              partners.
-            </p>
+              Our approach is built around{" "}
+              <strong>quality, reliable trade</strong>, and long-term business relationships.
+            </p> 
 
             <div className="about-points">
               {points.map((point) => (
@@ -48,20 +47,23 @@ function AboutPreview() {
               <span>Learn More About Us</span>
               <ArrowRight size={17} />
             </a>
+
           </div>
 
           {/* Image */}
           <div className="about-preview-image">
             <div className="about-image-frame">
+
               <img
                 src="/images/about/about.jpg"
-                alt="GEELAK global export operations"
+                alt="Our export operations"
               />
 
               <div className="about-image-badge">
                 <span>GEELAK</span>
                 <small>Global Trade</small>
               </div>
+
             </div>
           </div>
 

@@ -642,13 +642,24 @@
 }
 
 .about-preview .section-eyebrow {
+  display: block;
+
+  margin-bottom: 16px;
+
   color: var(--color-gold);
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .about-preview .section-heading {
   color: var(--color-white);
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-size: clamp(2.7rem, 4vw, 4rem);
   line-height: 1.05;
+  margin-bottom: 18px;
 }
 
 .about-preview .section-heading span {
@@ -657,9 +668,15 @@
 }
 
 .about-preview-text {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+.about-preview-text strong {
+  color: var(--color-gold);
+  font-weight: 700;
 }
 
 /* =================================
@@ -680,8 +697,8 @@
 
   color: var(--color-white);
 
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .about-point svg {
