@@ -47,12 +47,13 @@ function ProductsPreview() {
           </div>
 
           <p className="products-intro">
-            Explore the product categories GEELAK is preparing
-            to take from Indian markets to customers around the world.
+            We bring <strong>carefully selected Indian products</strong>{" "}
+            to customers across global markets, with a focus on{" "}
+            <strong>quality, reliability,</strong> and{" "}
+            <strong>long-term partnerships.</strong>
           </p>
 
         </div>
-
 
         {/* Product Cards */}
         <div className="products-grid">
@@ -84,7 +85,6 @@ function ProductsPreview() {
                 </a>
 
               </div>
-
 
               {/* Product Content */}
               <div className="product-card-content">

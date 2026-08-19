@@ -2,9 +2,9 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 function AboutPreview() {
   const points = [
-    "Quality-focused product sourcing",
+    "Trusted Indian product sourcing",
     "Professional export support",
-    "Long-term business relationships",
+    "Reliable global partnerships",
   ];
 
   return (
@@ -20,19 +20,22 @@ function AboutPreview() {
             </span>
 
             <h2 className="section-heading">
-              Your Trusted Partner
-              <span>Beyond Borders.</span>
+              India Has the Potential.
+              <span>We Take It Global.</span>
             </h2>
 
             <p className="about-preview-text">
-              We connect <strong>quality Indian products</strong>{" "}
-              with opportunities in international markets.
+              We connect <strong>trusted Indian sourcing</strong> with
+              global demand through <strong>quality, integrity</strong>, and
+              <strong> relentless execution.</strong>
             </p>
 
             <p className="about-preview-text">
-              Our approach is built around{" "}
-              <strong>quality, reliable trade</strong>, and long-term business relationships.
-            </p> 
+              We don't simply export products. We build{" "}
+              <strong>global connections</strong>, create{" "}
+              <strong>opportunities</strong>, and deliver{" "}
+              <strong>trust.</strong>
+            </p>
 
             <div className="about-points">
               {points.map((point) => (
@@ -44,7 +47,7 @@ function AboutPreview() {
             </div>
 
             <a href="/about" className="about-link">
-              <span>Learn More About Us</span>
+              <span>Discover Our Story</span>
               <ArrowRight size={17} />
             </a>
 
@@ -56,12 +59,12 @@ function AboutPreview() {
 
               <img
                 src="/images/about/about.jpg"
-                alt="Our export operations"
+                alt="Global export and trade operations"
               />
 
               <div className="about-image-badge">
-                <span>GEELAK</span>
-                <small>Global Trade</small>
+                <span>GLOBAL TRADE</span>
+                <small>From India to the World</small>
               </div>
 
             </div>

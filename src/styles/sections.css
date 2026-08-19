@@ -636,10 +636,13 @@
 /* =================================
    CONTENT
 ================================= */
-
 .about-preview-content {
   max-width: 620px;
 }
+
+/* =================================
+   SECTION EYEBROW
+================================= */
 
 .about-preview .section-eyebrow {
   display: block;
@@ -648,29 +651,41 @@
 
   color: var(--color-gold);
 
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 1.8px;
-  line-height: 1.2;
   text-transform: uppercase;
 }
 
+/* =================================
+   MAIN HEADING
+================================= */
+
 .about-preview .section-heading {
   color: var(--color-white);
+
   font-size: clamp(2.7rem, 4vw, 4rem);
   line-height: 1.05;
-  margin-bottom: 18px;
+
+  margin-bottom: 20px;
 }
 
 .about-preview .section-heading span {
   display: block;
+
   color: var(--color-copper);
 }
 
+/* =================================
+   DESCRIPTION
+================================= */
+
 .about-preview-text {
   color: rgba(255, 255, 255, 0.82);
+
   font-size: 1.08rem;
   line-height: 1.8;
+
   margin-bottom: 22px;
 }
 
@@ -680,54 +695,62 @@
 }
 
 /* =================================
-   POINTS
+   KEY POINTS
 ================================= */
 
 .about-points {
   display: flex;
   flex-direction: column;
+
   gap: 13px;
+
   margin: 24px 0;
 }
 
 .about-point {
   display: flex;
   align-items: center;
+
   gap: 12px;
 
   color: var(--color-white);
 
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.98rem;
+  font-weight: 600;
 }
 
 .about-point svg {
   flex-shrink: 0;
+
   color: var(--color-gold);
 }
 
 /* =================================
-   LINK
+   CTA LINK
 ================================= */
 
 .about-link {
   display: inline-flex;
   align-items: center;
+
   gap: 8px;
 
   color: var(--color-gold);
 
+  font-size: 1rem;
   font-weight: 700;
+
   text-decoration: none;
 
-  transition: var(--transition-normal);
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
 }
 
 .about-link:hover {
   color: var(--color-white);
   gap: 12px;
 }
-
 /* =================================
    IMAGE
 ================================= */

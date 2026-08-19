@@ -10,19 +10,46 @@
 
 
 .products-preview .section-eyebrow {
+  display: block;
+
+  margin-bottom: 14px;
+
   color: var(--color-gold);
+
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 }
 
 .products-preview .section-heading {
   color: var(--color-white);
+
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  line-height: 1.05;
+
+  margin-bottom: 0;
 }
 
 .products-preview .section-heading span {
-  color: var(--color-gold);
+  display: block;
+  color: var(--color-copper);
 }
 
 .products-preview .products-intro {
-  color: rgba(255, 255, 255, 0.75);
+  max-width: 470px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+.products-preview .products-intro strong {
+  color: var(--color-gold);
+  font-weight: 700;
 }
 
 .products-header {
