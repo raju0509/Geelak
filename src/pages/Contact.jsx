@@ -98,7 +98,7 @@ function Contact() {
 
                     <div>
                       <small>Location</small>
-                      <strong>India</strong>
+                      <strong>Hyderabad, Telaangana, India.</strong>
                     </div>
 
                   </div>
@@ -115,7 +115,7 @@ function Contact() {
                     <div>
                       <small>Phone</small>
                       <strong>
-                        +91 XXXXX XXXXX
+                        +91 99517 10724
                       </strong>
                     </div>
 
@@ -304,38 +304,6 @@ function Contact() {
         {/* =================================
             LOCATION / GOOGLE MAP
         ================================= */}
-
-        <section className="contact-map">
-
-          <div className="container">
-
-            <div className="contact-map-header">
-
-              <span className="section-eyebrow">
-                FIND US
-              </span>
-
-              <h2>
-                Our <span>Location.</span>
-              </h2>
-
-            </div>
-
-
-            <div className="map-placeholder">
-
-              <p>
-                Google Maps will be embedded here once the
-                client's business location is confirmed.
-              </p>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
         {/* =================================
             INQUIRY CTA
         ================================= */}

@@ -88,12 +88,12 @@ function Footer() {
 
             <div className="footer-contact-item">
               <Phone size={16} />
-              <span>+91 XXXXX XXXXX</span>
+              <span>+91 99517 10724</span>
             </div>
 
             <div className="footer-contact-item">
               <MapPin size={16} />
-              <span>India</span>
+              <span>Hyderabad, Telangana, India.</span>
             </div>
 
           </div>

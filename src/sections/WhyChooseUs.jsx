@@ -48,13 +48,12 @@ function WhyChooseUs() {
           {/* Left */}
           <div className="why-choose-intro">
             <span className="section-eyebrow">
-              WHY CHOOSE GEELAK
+              WHY CHOOSE US
             </span>
 
             <h2 className="section-heading">
-              Built on Quality.
-              <span>Driven by Trust.</span>
-            </h2>
+              Built on Quality. <span>Driven by Trust.</span>
+           </h2>
 
             <p>
               GEELAK focuses on creating reliable connections between

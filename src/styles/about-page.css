@@ -57,19 +57,65 @@
 /* =================================
    ABOUT INTRO
 ================================= */
+/* =================================
+   ABOUT PAGE CONTENT
+================================= */
+
+.about-page-content {
+  background: var(--color-white);
+  padding: 70px 0 80px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-content {
+  max-width: 560px;
+}
+
+.about-content h2 {
+  margin: 14px 0 0;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  line-height: 1.08;
+}
+
+.about-content h2 span {
+  display: block;
+  color: var(--color-copper);
+}
+
+.about-text {
+  max-width: 620px;
+}
+
+.about-text p {
+  margin: 0 0 20px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+/* =================================
+   ABOUT INTRO
+================================= */
 
 .about-page-intro {
   background: var(--color-white);
+  padding: 90px 0 5px;
 }
 
 .about-page-intro-grid {
   display: grid;
-
   grid-template-columns: 0.9fr 1.1fr;
-
-  gap: 90px;
-
+  gap: 80px;
   align-items: start;
+
+  margin-bottom: 55px;
 }
 
 .about-page-intro .section-heading {
@@ -78,20 +124,28 @@
 
 .about-page-intro-content {
   padding-top: 8px;
+  max-width: 520px;
+}
 
-  max-width: 650px;
+.about-page-intro-content h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: var(--color-navy);
+}
+
+.about-page-intro-content h2 span {
+  display: block;
+  color: var(--color-copper);
 }
 
 .about-page-intro-content p {
   margin: 0 0 22px;
-
   color: var(--color-text-muted);
-
   font-size: 0.96rem;
-
   line-height: 1.85;
 }
-
 
 /* =================================
    OUR APPROACH
@@ -248,6 +302,8 @@
 
 .about-values {
   background: var(--color-white);
+  padding-top: 55px;
+  padding-bottom: 70px;
 }
 
 .about-values-header {
@@ -325,6 +381,55 @@
   line-height: 1.7;
 }
 
+/* =================================
+   INTRO VALUES
+================================= */
+
+/* =================================
+   INTRO VALUES
+================================= */
+
+.about-page-intro .about-values {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin-top: 0;
+
+  border-top: 1px solid rgba(15, 45, 82, 0.12);
+}
+
+.about-page-intro .about-value {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
+  padding: 30px 35px;
+
+  border-right: 1px solid rgba(15, 45, 82, 0.12);
+  border-bottom: 1px solid rgba(15, 45, 82, 0.12);
+}
+
+.about-page-intro .about-value:first-child {
+  background: var(--color-ivory);
+}
+
+.about-page-intro .about-value h3 {
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+.about-page-intro .about-value p {
+  margin: 8px 0 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
 
 /* =================================
    GLOBAL VISION
@@ -514,4 +619,13 @@
     font-size: 2.8rem;
   }
 
+  
+
+  .about-values.section {
+    padding-top: 20px;
+    padding-bottom:20px;
+
+  }
+  
 }
+

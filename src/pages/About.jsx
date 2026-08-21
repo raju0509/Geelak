@@ -1,29 +1,29 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import InquiryCTA from "../sections/InquiryCTA";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 function About() {
   const values = [
     {
       number: "01",
       title: "Quality Assurance",
-      text: "A quality-focused approach to sourcing and preparing products for international markets.",
+      text: "We follow a quality-focused approach to sourcing and preparing products for international markets.",
     },
     {
       number: "02",
       title: "Trusted Partnerships",
-      text: "Building professional and long-term relationships with customers and business partners.",
+      text: "We build professional and long-term relationships with customers and business partners.",
     },
     {
       number: "03",
       title: "Reliable Trade",
-      text: "A professional approach focused on dependable export relationships.",
+      text: "We maintain a professional approach focused on dependable and transparent export relationships.",
     },
     {
       number: "04",
       title: "Global Opportunity",
-      text: "Connecting Indian products with opportunities across international markets.",
+      text: "We connect quality Indian products with customers and business opportunities across international markets.",
     },
   ];
 
@@ -33,14 +33,16 @@ function About() {
 
       <main>
 
-        {/* ABOUT HERO */}
+        {/* =================================
+            ABOUT HERO
+        ================================= */}
 
         <section className="about-page-hero">
 
           <div className="container">
 
             <span className="section-eyebrow">
-              ABOUT GEELAK
+              ABOUT US
             </span>
 
             <h1>
@@ -49,9 +51,8 @@ function About() {
             </h1>
 
             <p>
-              GEELAK Exports Private Limited is focused on
-              connecting quality Indian products with opportunities
-              in international markets.
+              We connect quality Indian products with customers and
+              business opportunities across international markets.
             </p>
 
           </div>
@@ -59,115 +60,106 @@ function About() {
         </section>
 
 
-        {/* WHO WE ARE */}
+        {/* =================================
+            WHO WE ARE
+        ================================= */}
 
-        <section className="about-page-intro section">
+        <section className="about-page-intro">
 
           <div className="container">
 
             <div className="about-page-intro-grid">
 
-              <div>
+              {/* Left Content */}
+
+              <div className="about-content">
 
                 <span className="section-eyebrow">
                   WHO WE ARE
                 </span>
 
-                <h2 className="section-heading">
-                  Connecting Indian
-                  <span>Products With The World.</span>
+                <h2>
+                  We Connect Indian Products
+                  <span>With The World.</span>
                 </h2>
 
               </div>
 
 
-              <div className="about-page-intro-content">
+              {/* Right Content */}
+
+              <div className="about-text">
 
                 <p>
-                  GEELAK Exports Private Limited is focused on
-                  connecting quality Indian products with customers
-                  and business opportunities across international
-                  markets.
+                  We connect trusted Indian products with global markets,
+                  creating reliable opportunities through quality, integrity,
+                  and long-term partnerships.
                 </p>
 
                 <p>
-                  Our approach is built around quality, reliable trade
-                  and professional relationships with customers and
-                  business partners.
+                  We focus on reliable sourcing, professional trade, and strong
+                  relationships with customers and business partners across
+                  international markets.
                 </p>
 
               </div>
 
             </div>
 
-          </div>
 
-        </section>
+            {/* =================================
+                ABOUT HIGHLIGHTS
+            ================================= */}
 
+            <div className="about-values">
 
-        {/* OUR APPROACH */}
+              <div className="about-value">
 
-        <section className="about-approach section">
+                <span>01</span>
 
-          <div className="container">
+                <div>
+                  <h3>
+                    Trusted Sourcing
+                  </h3>
 
-            <div className="about-approach-grid">
-
-              <div className="about-approach-content">
-
-                <span className="section-eyebrow">
-                  OUR APPROACH
-                </span>
-
-                <h2 className="section-heading">
-                  Built Around
-                  <span>Quality & Trust.</span>
-                </h2>
-
-                <p>
-                  GEELAK focuses on creating reliable connections
-                  between quality Indian products and international
-                  opportunities.
-                </p>
-
-                <div className="about-approach-points">
-
-                  <div>
-                    <CheckCircle2 size={19} />
-                    <span>
-                      Quality-focused product sourcing
-                    </span>
-                  </div>
-
-                  <div>
-                    <CheckCircle2 size={19} />
-                    <span>
-                      Professional export support
-                    </span>
-                  </div>
-
-                  <div>
-                    <CheckCircle2 size={19} />
-                    <span>
-                      Long-term business relationships
-                    </span>
-                  </div>
-
+                  <p>
+                    We work with reliable Indian suppliers to source quality products.
+                  </p>
                 </div>
 
               </div>
 
 
-              <div className="about-approach-visual">
+              <div className="about-value">
 
-                <img
-                  src="/images/about/about.jpg"
-                  alt="GEELAK export operations"
-                />
+                <span>02</span>
 
-                <div className="about-visual-label">
-                  <strong>GEELAK</strong>
-                  <span>Global Trade</span>
+                <div>
+                  <h3>
+                    Global Reach
+                  </h3>
+
+                  <p>
+                    We connect Indian products with customers and opportunities worldwide.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="about-value">
+
+                <span>03</span>
+
+                <div>
+                  <h3>
+                    Long-Term Partnerships
+                  </h3>
+
+                  <p>
+                    We build professional relationships focused on reliability,
+                    trust, and long-term value.
+                  </p>
                 </div>
 
               </div>
@@ -179,21 +171,26 @@ function About() {
         </section>
 
 
-        {/* WHY GEELAK */}
+        {/* =================================
+            WHY CHOOSE GEELAK
+        ================================= */}
 
-        <section className="about-values section">
+        <section
+          className="about-values section"
+          id="why-choose"
+        >
 
           <div className="container">
 
             <div className="about-values-header">
 
               <span className="section-eyebrow">
-                WHY CHOOSE GEELAK
+                WHY CHOOSE US
               </span>
 
               <h2 className="section-heading">
                 Built on Quality.
-                <span>Driven by Trust.</span>
+              <span>Driven by Trust.</span>
               </h2>
 
             </div>
@@ -235,9 +232,14 @@ function About() {
         </section>
 
 
-        {/* GLOBAL VISION */}
+        {/* =================================
+            GLOBAL VISION
+        ================================= */}
 
-        <section className="about-vision section">
+        <section
+          className="about-vision section"
+          id="global-reach"
+        >
 
           <div className="container">
 
@@ -253,9 +255,9 @@ function About() {
               </h2>
 
               <p>
-                Our vision is to create professional trade
-                connections that help quality Indian products
-                reach opportunities beyond geographical boundaries.
+                We aim to build professional trade connections that help
+                quality Indian products reach customers and opportunities
+                beyond geographical boundaries.
               </p>
 
               <a href="/contact">
@@ -275,12 +277,15 @@ function About() {
         </section>
 
 
+        {/* =================================
+            INQUIRY CTA
+        ================================= */}
+
         <InquiryCTA />
 
       </main>
 
       <Footer />
-
     </>
   );
 }

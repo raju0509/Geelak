@@ -664,8 +664,11 @@
 .about-preview .section-heading {
   color: var(--color-white);
 
+  font-family: var(--font-heading);
   font-size: clamp(2.7rem, 4vw, 4rem);
+  font-weight: 600;
   line-height: 1.05;
+  letter-spacing: -1.5px;
 
   margin-bottom: 20px;
 }
@@ -900,10 +903,16 @@
 
 .why-choose-intro .section-heading {
   color: var(--color-white);
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.15;
+  max-width: 520px;
 }
+
+
 
 .why-choose-intro .section-heading span {
   color: var(--color-gold);
+  font-size: 1rem;
 }
 
 .why-choose-intro > p {
