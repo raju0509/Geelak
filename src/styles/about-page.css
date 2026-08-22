@@ -314,7 +314,11 @@
 
 .about-values-header .section-heading {
   margin-top: 12px;
-}
+  
+}  
+
+
+
 
 
 /* =================================
@@ -629,3 +633,12 @@
   
 }
 
+.about-values-header .section-heading {
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  line-height: 1.1;
+}
+
+.about-values-header .section-heading span {
+  display: block;
+  font-size: inherit;
+}

@@ -61,7 +61,7 @@ function Footer() {
             <h4>Products</h4>
 
             <a href="/products">
-              Coffee Powder
+              Coffee
             </a>
 
             <a href="/products">

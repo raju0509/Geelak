@@ -190,9 +190,8 @@ function About() {
 
               <h2 className="section-heading">
                 Built on Quality.
-              <span>Driven by Trust.</span>
+                <span>Driven by Trust.</span>
               </h2>
-
             </div>
 
 

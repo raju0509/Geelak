@@ -52,7 +52,8 @@ function WhyChooseUs() {
             </span>
 
             <h2 className="section-heading">
-              Built on Quality. <span>Driven by Trust.</span>
+              Built on Quality.
+                <span>Driven by Trust.</span>
            </h2>
 
             <p>

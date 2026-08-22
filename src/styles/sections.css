@@ -894,7 +894,7 @@
 
   top: 120px;
 
-  max-width: 500px;
+  max-width: 650px;
 }
 
 .why-choose-intro .section-eyebrow {
@@ -903,16 +903,17 @@
 
 .why-choose-intro .section-heading {
   color: var(--color-white);
-  font-size: clamp(2rem, 3vw, 2.8rem);
-  line-height: 1.15;
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  line-height: 1.1;
   max-width: 520px;
 }
 
 
 
 .why-choose-intro .section-heading span {
+  display: block;
   color: var(--color-gold);
-  font-size: 1rem;
+  font-size: inherit;
 }
 
 .why-choose-intro > p {
