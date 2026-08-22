@@ -13,8 +13,7 @@ function GlobalReach() {
             </span>
 
             <h2 className="section-heading">
-              From India
-              <span>To The World.</span>
+              From India <span>To The World.</span>
             </h2>
 
             <p className="global-reach-description">
